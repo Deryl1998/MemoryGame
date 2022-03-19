@@ -13,7 +13,7 @@ class PictureTile(image: ImageView, id: Int , resource : Int) {
 
     fun hideImage(){
         GlobalScope.async{
-            delay(600)
+            delay(400)
             image.setImageResource(hiddenResource)
             isHidden=false
         }

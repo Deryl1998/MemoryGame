@@ -53,15 +53,8 @@ class MainActivity : AppCompatActivity() {
         lastCLickedItem = null
         countMoves = 0
         updateApproachesText()
-        var maxIter = when(level){
-            1 -> 1
-            2 -> 10
-            else->{
-                100
-            }
-        }
-        mixTable(maxIter)
-        displayAll()
+        mixTable()
+        hideAll()
     }
 
     private fun randValue(column : Int, row:Int): PictureTile {
@@ -72,12 +65,11 @@ class MainActivity : AppCompatActivity() {
         return picturesTable[randCol][randRow]!!
     }
 
-    private fun mixTable(maxIteration:Int){
-        for(mainLoop in 0..maxIteration){
-            for(i in 0..3)
-                 for(j in 0..3)
-                     picturesTable[i][j]?.swap(randValue(i,j))
-        }
+    private fun mixTable(){
+        for(i in 0..3)
+            for(j in 0..3)
+                picturesTable[i][j]?.swap(randValue(j,i))
+
     }
 
     private fun findPictureTile(wanted:Int) : PictureTile? {

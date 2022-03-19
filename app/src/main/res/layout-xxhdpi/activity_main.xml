@@ -69,6 +69,7 @@
                 android:layout_width="80dp"
                 android:layout_height="110dp"
                 android:onClick="userClick"
+                android:adjustViewBounds="false"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageView
@@ -77,6 +78,7 @@
                 android:layout_height="110dp"
                 android:layout_marginLeft="6dp"
                 android:onClick="userClick"
+                android:adjustViewBounds="false"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageView
@@ -85,6 +87,7 @@
                 android:layout_height="110dp"
                 android:layout_marginLeft="6dp"
                 android:onClick="userClick"
+                android:adjustViewBounds="false"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageView
@@ -93,6 +96,7 @@
                 android:layout_height="110dp"
                 android:layout_marginLeft="6dp"
                 android:onClick="userClick"
+                android:adjustViewBounds="false"
                 tools:ignore="SpeakableTextPresentCheck" />
         </TableRow>
 
